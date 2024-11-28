@@ -1,0 +1,325 @@
+/* copy ni masuk file interface bootstrap ni juga
+ <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome for icons (optional) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="header&footerAdmin.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+*/
+
+  /* Navbar custom styles */
+.navbar-custom {
+  background-color: #1a1c35;
+  font-family: 'Radio Canada', sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px;
+  
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+}
+
+.navbar-nav {
+  margin-right: 0;
+}
+
+.custom-link-admin {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.custom-link-admin i {
+  margin-right: 8px;
+  font-size: 1.9rem;
+  color: white;
+  transition: color 0.3s ease;
+  margin-right: 20px;
+}
+
+.custom-link-admin:hover {
+  color: #FF7F50;
+}
+
+.custom-link-admin i:hover {
+  color: #FF7F50;
+  transform: scale(1.1);
+}
+
+.nav-link {
+  color: #D6B400;
+  transition: transform 0.2s ease-in-out;
+  margin-right: 20px;
+}
+
+.nav-link:hover {
+  color: #FF7F50;
+  transform: scale(1.1);
+}
+
+.navbar-toggler {
+  border-color: #D6B400;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="white" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background-color: #1a1c35;
+  border-radius: 10px;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: #D6B400;
+  color: black;
+  transform: scale(1.1);
+}
+
+/* Profile Icon styling */
+.profile-icon i {
+  color: white; /* Default color */
+  transition: color 0.3s ease;
+}
+
+.profile-icon:hover i {
+  color: #FF7F50; /* Hover color matching other links */
+  transform: scale(1.1);
+}
+
+/* Footer Styles */
+.footer-custom {
+  background-color: #1a1c35;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 30px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-custom p {
+  margin: 5px 0;
+  color: white;
+}
+
+.footer-custom .footer-link {
+  color: #D6B400;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-custom .footer-link:hover {
+  transform: scale(1.2);
+  color: #FF7F50;
+}
+
+.footer-custom .social-links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-custom .social-links a:hover {
+  transform: scale(1.3);
+  color: #FF7F50;
+}
+
+.footer-custom .social-icon i {
+  font-size: 1.5rem;
+}
+
+/* Responsive styles */
+
+/* For mobile devices (max-width: 576px) */
+@media (max-width: 576px) {
+
+  .navbar-toggler {
+    margin-left: auto; /* Align the toggler to the right */
+  }
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .custom-link-admin i {
+    font-size: 1.2rem;
+  }
+
+  .navbar-custom {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .navbar-brand img {
+    height: 30px;
+    width: auto;
+  }
+
+  .nav-link {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .navbar-toggler-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .dropdown-menu {
+    background-color: #252637;
+    border-radius: 10px;
+    outline: 1px solid #FFD700; /* Adds a 2px solid golden outline */
+  }
+
+  .footer-custom p {
+    font-size: 14px;
+}
+
+.footer-custom .social-icon i {
+    font-size: 1.2rem;
+}
+}
+
+/* For tablets (min-width: 768px and max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* Apply to mobile and tablet sizes */
+  .navbar-collapse {
+    text-align: center; /* Center the collapsed menu */
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column; /* Stack the items vertically */
+    align-items: center; /* Center items */
+  }
+
+  .custom-link-admin {
+    margin-bottom: 10px; /* Add some space below the Home Admin link */
+  }
+
+  .navbar-custom {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .custom-link-admin i {
+    font-size: 1.5rem;
+  }
+
+  .navbar-brand img {
+    height: 35px;
+    width: auto;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    margin-right: 15px;
+  }
+
+  .dropdown-menu {
+    background-color: #252637;
+    border-radius: 10px;
+    outline: 1px solid #FFD700; /* Adds a 2px solid golden outline */
+  }
+
+  .footer-custom p {
+    font-size: 16px;
+}
+
+.footer-custom .social-icon i {
+    font-size: 1.3rem;
+}
+}
+
+/* For laptops (min-width: 1025px and max-width: 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .navbar-custom {
+    font-size: 22px;
+    padding: 18px;
+  }
+
+  .custom-link-admin i {
+    font-size: 1.5rem;
+  }
+
+  .navbar-brand img {
+    height: 40px;
+    width: auto;
+  }
+
+  .nav-link {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+
+  .footer-custom p {
+    font-size: 18px;
+}
+
+.footer-custom .social-icon i {
+    font-size: 1.5rem;
+}
+}
+
+/* For larger monitors (min-width: 1440px) */
+@media (min-width: 1441px) {
+  .navbar-custom {
+    font-size: 24px;
+    padding: 20px;
+  }
+  .navbar-nav {
+    margin-right: 180px;
+  }
+
+  .custom-link-admin i {
+    font-size: 1.9rem;
+  }
+  .navbar-brand img {
+    height: 50px;
+    width: auto;
+  }
+
+  .nav-link {
+    font-size: 22px;
+    margin-right: 30px;
+  } 
+
+  .footer-custom p {
+    font-size: 20px;
+}
+
+.footer-custom .social-icon i {
+    font-size: 2rem;
+}
+}
+
