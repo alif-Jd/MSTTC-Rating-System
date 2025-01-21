@@ -62,7 +62,7 @@ function sendCredentialsEmail($email, $username, $password)
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'msttc24@gmail.com';
-        $mail->Password = 'uasf xnba hcea bcft'; // Replace with your Gmail app-specific password
+        $mail->Password = ''; // Replace with your Gmail app-specific password
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
