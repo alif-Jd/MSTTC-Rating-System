@@ -1,9 +1,9 @@
 <?php
 // Database configuration
-$servername = "localhost"; // Use "localhost" for Hostinger; otherwise, check Hostinger's control panel for the specific hostname
-$username = ""; // Your database username from Hostinger
-$password = ""; // Your database password from Hostinger
-$dbname = ""; // Your database name from Hostinger
+$servername = "localhost"; // Use "localhost" 
+$username = ""; // Your database username 
+$password = ""; // Your database password 
+$dbname = ""; // Your database name 
 
 // Create connection
 $connect = new mysqli($servername, $username, $password, $dbname);
