@@ -81,12 +81,12 @@ function sendOTPEmail($email, $otp_code)
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'msttc24@gmail.com';
-        $mail->Password = '';
+        $mail->Username = '';//email here ''
+        $mail->Password = '';//pass ''
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
-        $mail->setFrom('msttc24@gmail.com', 'MSTTC Rating System');
+        $mail->setFrom('', ''); //first '' put email , then second '' put name for who send it
         $mail->addAddress($email);
 
         $mail->isHTML(true);
@@ -136,3 +136,4 @@ function sendOTPEmail($email, $otp_code)
         return false;
     }
 }
+
